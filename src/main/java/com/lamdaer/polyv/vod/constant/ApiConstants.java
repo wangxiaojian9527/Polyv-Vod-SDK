@@ -39,6 +39,13 @@ public class ApiConstants {
      */
     public static final String GET_KEY_INFORMATION = "http://api.polyv.net/v2/video/{userid}/keyframe/{vid}";
 
+    /**
+     * 批量修改视频的授权方式
+     */
+    public static final String BATCH_MODIFY_THE_VIDEO_AUTHORIZATION_METHOD = "http://api.polyv.net/v2/config/{userid}/hlslevel";
+
+
+
     private ApiConstants() {
     }
 

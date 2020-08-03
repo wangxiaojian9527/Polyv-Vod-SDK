@@ -1,5 +1,6 @@
 package com.lamdaer.polyv.vod.service;
 
+import com.lamdaer.polyv.vod.bean.request.editVideo.BatchModifyTheVideoAuthorizationMethodRequest;
 import com.lamdaer.polyv.vod.bean.request.editVideo.PolyvVodBulkEditAuthorizationStateRequest;
 import com.lamdaer.polyv.vod.bean.result.PLVodCommonResult;
 
@@ -20,4 +21,12 @@ public interface PolyvVodEditVideoService {
      * @return 修改后的结果
      */
     PLVodCommonResult bulkEditAuthorizationState(PolyvVodBulkEditAuthorizationStateRequest request);
+
+    /**
+     * 批量修改视频的授权方式
+     * http://api.polyv.net/v2/config/{userid}/hlslevel
+     * @param request
+     * @return
+     */
+    PLVodCommonResult batchModifyTheVideoAuthorizationMethod(BatchModifyTheVideoAuthorizationMethodRequest request);
 }
